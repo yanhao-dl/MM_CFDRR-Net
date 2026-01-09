@@ -4,7 +4,7 @@ This repository provides the official project page for the manuscript:
 **"Multi-Modal Residual Network for Efficient Reflection Removal Using Flash-Only Indices"**
 (submitted to *The Visual Computer*).
 
-> **Release plan (important):**
+> **Release plan:**
 > To reduce potential risks before the manuscript is formally accepted, this repository is currently released as a **pre-acceptance skeleton**.
 > We provide documentation, environment setup, evaluation tools, and dataset access instructions.
 > The **full training/inference code and pretrained models** will be released **upon acceptance**.
