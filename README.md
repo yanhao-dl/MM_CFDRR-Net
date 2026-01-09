@@ -20,12 +20,54 @@ DOI: https://doi.org/10.1109/CVPR46437.2021.01457
 - Please follow the official FOR project page to download the dataset.
 - See [data/README.md](data/README.md) for instructions and expected folder structure.
 
-## Environment
-Tested with:
-- Python >= 3.8
-- PyTorch >= 2.0
-- CUDA (optional, for training)
+To setup a conda environment, test on demo data:
+```
+conda env create -f environment.yml
+conda activate flashrr-rfc
+bash download.sh
+python test.py
+```
 
-Install dependencies:
-```bash
-pip install -r requirements.txt
+## Setup
+
+### Environment
+This code is based on tensorflow. It has been tested on Ubuntu 18.04 LTS.
+
+Anaconda is recommended: [Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-18-04)
+| [Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-16-04)
+
+After installing Anaconda, you can setup the environment simply by
+
+```
+conda env create -f environment.yml
+```
+
+### Download checkpoint and VGG model
+
+You can download the ckpt and VGG model by
+```
+bash download.sh
+```
+
+## Quick inference 
+You can get the results for the demo data by:
+```
+python test.py
+```
+
+If you prepare your own dataset, note that each data sample must contains an ambient image and a flash-only iamge:
+```
+python test.py --testset /path/to/your/testset
+```
+
+## Training 
+### Reproduce our results
+First, download the dataset:
+```
+bash download_data.sh
+```
+
+Then, you can train a model by
+```
+python train.py --model YOUR_MODEL_NAME
+```
