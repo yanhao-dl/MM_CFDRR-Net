@@ -69,5 +69,5 @@ bash download_data.sh
 
 Then, you can train a model by
 ```
-python train.py --model YOUR_MODEL_NAME
+python train.py
 ```
