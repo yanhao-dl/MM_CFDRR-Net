@@ -5,9 +5,7 @@ This repository provides the official project page for the manuscript:
 (submitted to *The Visual Computer*).
 
 > **Release plan:**
-> To reduce potential risks before the manuscript is formally accepted, this repository is currently released as a **pre-acceptance skeleton**.
-> We provide documentation, environment setup, evaluation tools, and dataset access instructions.
-> The **full training/inference code and pretrained models** will be released **upon acceptance**.
+> The experimental codebase and related data organization are still being curated and consolidated, and this repository will serve as the foundation for our subsequent research and continued development. At this stage, we provide documentation, environment setup guidance, evaluation utilities, and dataset access instructions. The complete code (including training and inference pipelines) will be uploaded in a future update once the release is finalized.
 
 ## Overview
 MM_CFDRR-Net is a reflection removal framework that leverages **flash-only indices** as physically interpretable cues and uses a dual-map fusion design with attention and multi-scale residual modeling for robust reflection suppression under misalignment.
